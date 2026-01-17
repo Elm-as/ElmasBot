@@ -30,5 +30,5 @@ export async function cmdProfil(sock, msg) {
   ┃   ❌ Défaites : ${stats?.quiz_lose ?? 0}
   ┃   🔥 Streak : ${stats?.streak ?? 0} (best: ${stats?.best_streak ?? 0})
   ╰━━━━━━━━━━━━━━━━━━━━━━━╯`
-  await sock.sendMessage(groupJid, { text, mentions: [jid] })
+  await sock.sendMessage(groupJid, { text, mentions: [jid], quoted: msg })
 }

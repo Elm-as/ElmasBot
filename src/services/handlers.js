@@ -12,6 +12,8 @@ import { cmdQuizAdmins } from '../commands/quiz/quizAdmins.js'
 import { cmdQuizSetAdmin } from '../commands/quiz/quizSetAdmin.js'
 import { cmdQuizDelAdmin } from '../commands/quiz/quizDelAdmin.js'
 import { cmdQuizSettings } from '../commands/quiz/quizSettings.js'
+import { cmdQuizInfo } from '../commands/quiz/quizInfo.js'
+import { cmdQuizScore } from '../commands/quiz/quizScore.js'
 
 import { quizEngine } from './quizEngine.js'
 import { ensureUser } from './xp.js'
@@ -19,6 +21,8 @@ import { ensureGroup, ensureGroupMember } from './groupSync.js'
 import { cmdAnime } from '../commands/anime.js'
 import { cmdPerso } from '../commands/perso.js'
 import { cmdImg } from '../commands/img.js'
+import { cmdImage } from '../commands/imgPerso.js'
+import { cmdSettings } from '../commands/settings.js'
 import { cmdTrace } from '../commands/trace.js'
 
 function getText(msg) {
@@ -58,8 +62,13 @@ export async function handleMessage(sock, msg) {
   const command = raw.toLowerCase()
 
   switch (command) {
+    case 'image':
+      await cmdImage(sock, msg, args)
+      break;
     case 'ping': return cmdPing(sock, msg)
-    case 'help': return cmdHelp(sock, msg)
+    case 'help':
+    case 'aide':
+      return cmdHelp(sock, msg)
     case 'profil': return cmdProfil(sock, msg)
     case 'classement': return cmdClassement(sock, msg)
     case 'daily': return cmdDaily(sock, msg)
@@ -68,6 +77,7 @@ export async function handleMessage(sock, msg) {
     case 'img': return cmdImg(sock, msg)
     case 'trace': return cmdTrace(sock, msg)
     case 'xplogs': return cmdXpLogs(sock, msg, args)
+    case 'settings': return cmdSettings(sock, msg, args)
     // quiz
     case 'quiz': {
       const sub = (args[0] || '').toLowerCase()
@@ -78,6 +88,8 @@ export async function handleMessage(sock, msg) {
       if (sub === 'setadmin') return cmdQuizSetAdmin(sock, msg, args.slice(1))
       if (sub === 'deladmin') return cmdQuizDelAdmin(sock, msg, args.slice(1))
       if (sub === 'settings') return cmdQuizSettings(sock, msg, args.slice(1))
+      if (sub === 'info') return cmdQuizInfo(sock, msg)
+      if (sub === 'score') return cmdQuizScore(sock, msg, args.slice(1))
       return sock.sendMessage(jid, { text: "Utilise: !quiz start easy|normal|hard / !quiz stop / !quiz rep / !quiz admins / !quiz setadmin @user / !quiz deladmin @user / !quiz settings [clé] [valeur]" })
     }
       case 'easteregg':

@@ -6,7 +6,7 @@ export async function cmdQuizRep(sock, msg) {
   const sender = msg.senderJid
   const allowed = await isQuizAdmin(sock, groupJid, sender)
   if (!allowed) {
-    return sock.sendMessage(groupJid, { text: "⛔ Commande réservée aux admins quiz." })
+    return sock.sendMessage(groupJid, { text: "⛔ Commande réservée aux admins quiz.", quoted: msg })
   }
   await quizEngine.reveal({ sock, groupJid })
 }

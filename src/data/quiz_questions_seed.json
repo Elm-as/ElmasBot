@@ -1,18 +1,1442 @@
 [
   {
-    "id": "naruto_001",
+    "id": "naruto_004",
     "difficulty": "easy",
-    "question": "Quel est le prénom du rival principal de Naruto ?",
-    "choices": ["Sasuke", "Kakashi", "Gaara", "Shikamaru"],
+    "question": "Quel est le nom du village caché de Naruto ?",
+    "choices": ["Konoha", "Suna", "Kiri", "Kumo"],
     "answer_index": 0,
     "tags": ["naruto"]
   },
   {
-    "id": "onepiece_001",
+    "id": "onepiece_004",
     "difficulty": "easy",
-    "question": "Quel est le nom du chapeau de Luffy ?",
-    "choices": ["Chapeau de paille", "Chapeau noir", "Casquette rouge", "Béret vert"],
+    "question": "Quel membre de l'équipage de Luffy est un cyborg ?",
+    "choices": ["Franky", "Zoro", "Sanji", "Usopp"],
     "answer_index": 0,
     "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_004",
+    "difficulty": "easy",
+    "question": "Quelle est la forme de base de la technique la plus célèbre de Goku ?",
+    "choices": ["Kamehameha", "Genkidama", "Kaioken", "Shunkan Idō"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball"]
+  },
+  {
+    "id": "aot_004",
+    "difficulty": "easy",
+    "question": "Quel est l'objectif principal des Titans dans les premières saisons ?",
+    "choices": ["Manger les humains", "Protéger les murs", "Parlers", "Construire"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_001",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'école où étudie Izuku Midoriya ?",
+    "choices": ["U.A. High School", "Shiketsu High", "Ketsubutsu Academy", "Isamu High"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_001",
+    "difficulty": "easy",
+    "question": "Quel objet surnaturel trouve Light Yagami ?",
+    "choices": ["Le Death Note", "Le Œil du Shinigami", "Le Grimoire", "Le Miroir de Vérité"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_001",
+    "difficulty": "easy",
+    "question": "Quel est le métal principal utilisé dans l'automail d'Edward Elric ?",
+    "choices": ["Acier", "Argent", "Or", "Platine"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_001",
+    "difficulty": "easy",
+    "question": "Quelle est la couleur distinctive de la lame de Tanjiro Kamado ?",
+    "choices": ["Noire", "Bleue", "Rose-vert", "Dorée"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_001",
+    "difficulty": "easy",
+    "question": "Quel est le nom du puissant malédiction scellée en Yuji Itadori ?",
+    "choices": ["Ryomen Sukuna", "Mahito", "Jogo", "Hanami"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_001",
+    "difficulty": "easy",
+    "question": "Quel est le but principal de l'examen de Hunter au début de la série ?",
+    "choices": ["Obtenir la licence de Hunter", "Tuer des monstres", "Devenir riche", "Trouver le trésor"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_001",
+    "difficulty": "easy",
+    "question": "Quel est le titre donné à Ichigo Kurosaki après avoir obtenu ses pouvoirs ?",
+    "choices": ["Shinigami substitut", "Quincy", "Fullbringer", "Vizored"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_001",
+    "difficulty": "easy",
+    "question": "Dans quel jeu vidéo les joueurs sont-ils piégés dans 'Sword Art Online' ?",
+    "choices": ["SAO", "ALO", "GGO", "Underworld"],
+    "answer_index": 0,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_001",
+    "difficulty": "easy",
+    "question": "Quelle est l'espèce hybride de Ken Kaneki après son 'accident' ?",
+    "choices": ["Ghoule", "Humain", "Demi-humain", "Ghoule artificielle"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_001",
+    "difficulty": "easy",
+    "question": "Quel est le nom du héros capable de vaincre n'importe quel adversaire d'un seul coup ?",
+    "choices": ["Saitama", "Genos", "Mumen Rider", "King"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_001",
+    "difficulty": "easy",
+    "question": "Quel est le métier principal de l'équipage du Bebop ?",
+    "choices": ["Chasseurs de primes", "Pirates", "Marchands", "Explorateurs"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_005",
+    "difficulty": "normal",
+    "question": "Sous quel nom Jiraiya est-il également connu dans le monde ninja ?",
+    "choices": ["L'Ermite des Crapauds", "Le Ninja Medical", "Le Serpent Blanc", "L'Usurpateur"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_005",
+    "difficulty": "normal",
+    "question": "Qui est le frère biologique de Luffy révélé à Marineford ?",
+    "choices": ["Portgas D. Ace", "Sabo", "Monkey D. Dragon", "Edward Newgate"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_005",
+    "difficulty": "normal",
+    "question": "Quelle est la première planète que Beerus et Whis visitent à la recherche du 'Délicieux Super Saiyan' ?",
+    "choices": ["Planète de King Kai", "Namek", "Terre", "Planète Vegeta"],
+    "answer_index": 1,
+    "tags": ["dbz", "dragonball super"]
+  },
+  {
+    "id": "aot_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom de la petite amie de Sasha Braus, originaire de son village ?",
+    "choices": ["Nicolo", "Jean", "Connie", "Reiner"],
+    "answer_index": 2,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_002",
+    "difficulty": "normal",
+    "question": "Quel est le nom du Alter qui permet à All Might de stocker de la puissance ?",
+    "choices": ["One For All", "All For One", "Fa Jin", "Gearshift"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_002",
+    "difficulty": "normal",
+    "question": "Quel est le vrai nom du détective L ?",
+    "choices": ["L Lawliet", "Light Yagami", "Near", "Mello"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_002",
+    "difficulty": "normal",
+    "question": "Quelle est la pierre philosophale principalement composée ?",
+    "choices": ["D'âmes humaines", "De minéraux rares", "De sang", "D'alchimie pure"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_002",
+    "difficulty": "normal",
+    "question": "Quel est le nom du premier démon que Tanjiro affronte après la transformation de Nezuko ?",
+    "choices": ["Swaru", "Yahaba", "Temari", "Susamaru"],
+    "answer_index": 3,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_002",
+    "difficulty": "normal",
+    "question": "Quel est le nom de la technique héréditaire du clan Zenin ?",
+    "choices": ["Les Dix Ombres", "L'Infini", "La Réplication", "La Manipulation de Projectiles"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_002",
+    "difficulty": "normal",
+    "question": "Quelle est la capacité Nen de Killua Zoldyck ?",
+    "choices": ["Transmutation (Electricité)", "Renforcement", "Manipulation", "Spécialisation"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_002",
+    "difficulty": "normal",
+    "question": "Quel est le nom du Zanpakutō de Byakuya Kuchiki ?",
+    "choices": ["Senbonzakura", "Zangetsu", "Hyōrinmaru", "Kyōka Suigetsu"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_002",
+    "difficulty": "normal",
+    "question": "Quel est le nom du système d'assistance administrateur dans SAO ?",
+    "choices": ["Yui", "Heathcliff", "Akihiko Kayaba", "Cardinal"],
+    "answer_index": 3,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_002",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'organisation qui traque les goules à Tokyo ?",
+    "choices": ["Le Commission de Contre-Mesure Ghoule (CCG)", "Aogiri Tree", "Anteiku", "V"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_002",
+    "difficulty": "normal",
+    "question": "De quelle classe Saitama devient-il membre après avoir passé l'examen ?",
+    "choices": ["Classe B", "Classe C", "Classe S", "Classe A"],
+    "answer_index": 1,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_002",
+    "difficulty": "normal",
+    "question": "Quel est l'ancien syndicat criminel auquel Spike Spiegel appartenait ?",
+    "choices": ["Les Dragons Rouges", "Les Syndicate", "Vicious's Gang", "Les Space Warriors"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_006",
+    "difficulty": "hard",
+    "question": "Combien de fois Jiraya a-t-il échoué dans sa vie, selon sa prophétie ?",
+    "choices": ["Trois fois", "Une fois", "Cinq fois", "Jamais"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du Ponéglyphe rouge que Robin cherche ?",
+    "choices": ["Ponéglyphe de Road", "Ponéglyphe d'Histoire", "Ponéglyphe d'Or", "Ponéglyphe de Guerre"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'attaque ultime de Vegeta dans sa forme Super Saiyan Blue ?",
+    "choices": ["Final Flash", "Galick Gun", "Big Bang Attack", "Final Shine Attack"],
+    "answer_index": 3,
+    "tags": ["dbz", "dragonball super"]
+  },
+  {
+    "id": "aot_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du premier Titan apparu selon la légende d'Ymir ?",
+    "choices": ["Le Titan Originel", "Le Titan Assaillant", "Le Titan Marteau", "Le Titan Colossal"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_003",
+    "difficulty": "hard",
+    "question": "Quel est le pourcentage de puissance maximum que Deku peut utiliser sans se briser après l'entraînement avec Gran Torino ?",
+    "choices": ["5%", "8%", "10%", "15%"],
+    "answer_index": 1,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_003",
+    "difficulty": "hard",
+    "question": "Quel est le nom du shinigami qui tombe amoureux de Misa Amane ?",
+    "choices": ["Rem", "Ryuk", "Sidoh", "Gelus"],
+    "answer_index": 3,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_003",
+    "difficulty": "hard",
+    "question": "Quel est le nom du philosophe qui a inspiré la loi d'équivalence dans l'alchimie ?",
+    "choices": ["Paracelse", "Isaac Newton", "Thalès", "Albertus Magnus"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_003",
+    "difficulty": "hard",
+    "question": "Combien de formes comporte la Danse du Dieu du Feu (Hinokami Kagura) que Tanjiro utilise ?",
+    "choices": ["Treize", "Douze", "Dix", "Huit"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_003",
+    "difficulty": "hard",
+    "question": "Quel est le nom du domaine de Satoru Gojo qui l'isole dans un espace infini ?",
+    "choices": ["Infini", "Six Yeux", "Limitless", "Vide Infini"],
+    "answer_index": 3,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_003",
+    "difficulty": "hard",
+    "question": "Quelle est la condition pour que Kurapika puisse utiliser sa chaîne de jugement sur n'importe qui ?",
+    "choices": ["Être face à un membre du Brigade des Fantômes", "Avoir les yeux écarlates", "Être en état de colère", "Avoir un contrat avec un Nen Maître"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_003",
+    "difficulty": "hard",
+    "question": "Quel est le nom du bankai d'Urahara Kisuke ?",
+    "choices": ["Kannonbiraki Benihime Aratame", "Shirafude Ichimonji", "Koko no Ame", "Tekken Tachikaze"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_003",
+    "difficulty": "hard",
+    "question": "Quel est le numéro de modèle de l'AI Yui ?",
+    "choices": ["AI-1", "MHCP-001", "STL-001", "Cardinal-001"],
+    "answer_index": 1,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_003",
+    "difficulty": "hard",
+    "question": "Quel est le nom du kagune de type 'rinkaku' que possède Kaneki ?",
+    "choices": ["Kagune de type 'Dragon'", "Kagune de type 'Ōwl'", "Kagune de type 'Centipede'", "Kagune de type 'Tentacle'"],
+    "answer_index": 1,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_003",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'organisation secrète qui crée des monstres dans 'One Punch Man' ?",
+    "choices": ["La Maison de l'Évolution", "Le Conseil des Sages", "L'Organisation", "Le Groupe Mad"],
+    "answer_index": 2,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_003",
+    "difficulty": "hard",
+    "question": "Quelle est la somme de la prime sur la tête de Spike Spiegel à la fin de la série ?",
+    "choices": ["100 million Woolongs", "50 million Woolongs", "80 million Woolongs", "Il n'a plus de prime"],
+    "answer_index": 3,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du technique de clonage de l'ombre que Naruto maîtrise ?",
+    "choices": ["Kage Bunshin no Jutsu", "Rasengan", "Chidori", "Sharingan"],
+    "answer_index": 1,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du navire des Pirates au Chapeau de Paille ?",
+    "choices": ["Vogue Merry", "Thousand Sunny", "Red Force", "Oro Jackson"],
+    "answer_index": 1,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_007",
+    "difficulty": "easy",
+    "question": "Qui est le dieu de la destruction de l'univers 7 ?",
+    "choices": ["Beerus", "Whis", "Champa", "Zeno"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball super"]
+  },
+  {
+    "id": "aot_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du bataillon chargé de la protection des murs ?",
+    "choices": ["Garnison", "Bataillon d'exploration", "Police militaire", "Brigade spéciale"],
+    "answer_index": 2,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom du héros n°1 qui est le mentor de Deku ?",
+    "choices": ["All Might", "Endeavor", "Hawks", "Best Jeanist"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom du shinigami qui suit Light Yagami ?",
+    "choices": ["Ryuk", "Rem", "Sidoh", "Gelus"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'armure vivante qui accompagne Edward Elric ?",
+    "choices": ["Alphonse Elric", "Winry Rockbell", "Roy Mustang", "Riza Hawkeye"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'organisation qui traque les démons ?",
+    "choices": ["Corps des Pourfendeurs de Démons", "Corps de Chasse", "Ordre des Exorcistes", "Groupe de Suppression"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'école de sorcellerie où étudient Yuji et ses amis ?",
+    "choices": ["École de Sorcellerie de Tokyo", "École de Kyoto", "Académie Jujutsu", "Lycée des Malédictions"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_004",
+    "difficulty": "easy",
+    "question": "Qui est le meilleur ami de Gon Freecss ?",
+    "choices": ["Killua Zoldyck", "Kurapika", "Leorio", "Hisoka"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'épée spirituelle de Ichigo Kurosaki ?",
+    "choices": ["Zangetsu", "Senbonzakura", "Hyōrinmaru", "Benihime"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_004",
+    "difficulty": "easy",
+    "question": "Quel est le pseudonyme de Kirito dans Sword Art Online ?",
+    "choices": ["Kirito", "Kazuto Kirigaya", "The Black Swordsman", "Heathcliff"],
+    "answer_index": 2,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_004",
+    "difficulty": "easy",
+    "question": "Quel café est un lieu de rencontre pour les goules pacifiques ?",
+    "choices": ["Anteiku", "Re:", "L'Échanson", "Café de l'Ouest"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom du disciple de Saitama ?",
+    "choices": ["Genos", "Speed-o'-Sound Sonic", "King", "Mumen Rider"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_004",
+    "difficulty": "easy",
+    "question": "Quel est le nom du chien data corgi de l'équipage ?",
+    "choices": ["Ein", "Ed", "Faye", "Jet"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du clan qui possède le Kekkei Genkai du Sharingan ?",
+    "choices": ["Uchiha", "Hyuga", "Senju", "Uzumaki"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du médecin de l'équipage des Pirates au Chapeau de Paille ?",
+    "choices": ["Tony Tony Chopper", "Nico Robin", "Brook", "Jinbe"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_008",
+    "difficulty": "normal",
+    "question": "Qui est le premier Super Saiyan de la série ?",
+    "choices": ["Goku", "Vegeta", "Gohan", "Bardock"],
+    "answer_index": 3,
+    "tags": ["dbz", "dragonball"]
+  },
+  {
+    "id": "aot_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du Titan qui peut durcir sa peau ?",
+    "choices": ["Titan Cuirassé", "Titan Colossal", "Titan Assaillant", "Titan Bestial"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom du Alter de Shoto Todoroki ?",
+    "choices": ["Half-Cold Half-Hot", "Hellflame", "Ice Manipulation", "Fire and Ice"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'organisation policière qui traque Kira ?",
+    "choices": ["Force Spéciale de Recherche de Kira", "Interpol", "FBI", "Police Nationale"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'alchimiste qui utilise la flamme ?",
+    "choices": ["Roy Mustang", "Edward Elric", "Alex Louis Armstrong", "Isaac McDougal"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom du souffle utilisé par Zenitsu Agatsuma ?",
+    "choices": ["Souffle de la Foudre", "Souffle de l'Eau", "Souffle du Serpent", "Souffle du Vent"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom du domaine de Sukuna ?",
+    "choices": ["Sanctuaire Malevolent", "Shrine of Malevolence", "Malevolent Kitchen", "Shrine of the Dead"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_005",
+    "difficulty": "normal",
+    "question": "Quelle est la capacité Nen de Gon Freecss ?",
+    "choices": ["Renforcement", "Émission", "Transmutation", "Spécialisation"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom du bankai de Toshiro Hitsugaya ?",
+    "choices": ["Daiguren Hyōrinmaru", "Tensa Zangetsu", "Kannonbiraki Benihime Aratame", "Kokujo Tengen Myo"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom du jeu dans l'arc 'Gun Gale Online' ?",
+    "choices": ["GGO", "ALO", "SAO", "Underworld"],
+    "answer_index": 0,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'organisation terroriste de goules ?",
+    "choices": ["Aogiri Tree", "Anteiku", "CCG", "V"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom du héros de classe S n°1 ?",
+    "choices": ["Blast", "Tatsumaki", "Silver Fang", "King"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_005",
+    "difficulty": "normal",
+    "question": "Quel est le nom du vaisseau des chasseurs de primes ?",
+    "choices": ["Bebop", "Swordfish II", "Red Tail", "Hammerhead"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du technique utilisé par Minato pour se téléporter ?",
+    "choices": ["Hiraishin no Jutsu", "Rasengan", "Kage Bunshin", "Flying Thunder God"],
+    "answer_index": 3,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du ancien membre de l'équipage du Roger Pirates qui a entraîné Rayleigh ?",
+    "choices": ["Scopper Gaban", "Bullet", "Shanks", "Buggy"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'attaque que Goku utilise pour vaincer Kid Buu ?",
+    "choices": ["Super Spirit Bomb", "Kamehameha", "Dragon Fist", "Ultra Instinct"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball"]
+  },
+  {
+    "id": "aot_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du titan qui a mangé la mère d'Eren ?",
+    "choices": ["Titan de Dina Fritz", "Titan Colossal", "Titan Bestial", "Titan Marteau"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du Alter de Mirio Togata qui lui permet de devenir intangible ?",
+    "choices": ["Permeation", "Phantom", "Intangibility", "Ghost"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du successeur de L qui prend la tête de l'enquête ?",
+    "choices": ["Near", "Mello", "Matt", "Beyond Birthday"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du philosophe qui a créé la pierre philosophale dans la série ?",
+    "choices": ["Hohenheim of Light", "Van Hohenheim", "Father", "Dante"],
+    "answer_index": 1,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du premier souffle de l'eau utilisé par Tanjiro ?",
+    "choices": ["Surface Slash", "Water Wheel", "Striking Tide", "Dead Calm"],
+    "answer_index": 1,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la technique de Gojo qui attire tout vers un point ?",
+    "choices": ["Crimson Red", "Hollow Purple", "Blue", "Infinity"],
+    "answer_index": 2,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_006",
+    "difficulty": "hard",
+    "question": "Quelle est la condition pour que Gon utilise sa forme adulte contre Neferpitou ?",
+    "choices": ["Sacrifier tout son potentiel et sa vie future", "Être en colère", "Avoir un contrat avec Nen", "Utiliser un objet spécial"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du bankai de Kenpachi Zaraki ?",
+    "choices": ["Nozarashi", "Zaraki Tensa", "Kazeshini", "Tengen Myo"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du système qui régit le monde virtuel dans 'Alicization' ?",
+    "choices": ["STL", "Cardinal", "RATH", "Underworld"],
+    "answer_index": 1,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom du kagune de type 'koukaku' que possède Touka Kirishima ?",
+    "choices": ["Kagune de type 'Ailes'", "Kagune de type 'Épée'", "Kagune de type 'Bouclier'", "Kagune de type 'Tentacule'"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'organisation de héros dans 'One Punch Man' ?",
+    "choices": ["Hero Association", "Justice League", "S-Class Heroes", "The Association"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_006",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la maladie dont souffre Spike Spiegel ?",
+    "choices": ["Mal de l'espace", "Amnésie", "Syndrome de la vision tunnel", "Il n'a pas de maladie"],
+    "answer_index": 2,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du sensei de Naruto, Sasuke et Sakura ?",
+    "choices": ["Kakashi Hatake", "Jiraiya", "Tsunade", "Orochimaru"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du premier membre de l'équipage de Luffy ?",
+    "choices": ["Roronoa Zoro", "Nami", "Usopp", "Sanji"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_010",
+    "difficulty": "easy",
+    "question": "Qui est le père de Goku ?",
+    "choices": ["Bardock", "King Vegeta", "Raditz", "Frieza"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball"]
+  },
+  {
+    "id": "aot_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du meilleur ami d'Eren qui est aussi un titan ?",
+    "choices": ["Armin Arlert", "Reiner Braun", "Jean Kirstein", "Connie Springer"],
+    "answer_index": 1,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du héros qui peut créer et manipuler le feu ?",
+    "choices": ["Endeavor", "All Might", "Hawks", "Best Jeanist"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom de la fille modèle qui devient la seconde Kira ?",
+    "choices": ["Misa Amane", "Kiyomi Takada", "Naomi Misora", "Rem"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du colonel qui est un alchimiste de la flamme ?",
+    "choices": ["Roy Mustang", "Riza Hawkeye", "Alex Louis Armstrong", "Maes Hughes"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du frère de Tanjiro qui est devenu un démon ?",
+    "choices": ["Nezuko Kamado", "Zenitsu Agatsuma", "Inosuke Hashibira", "Genya Shinazugawa"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du sorcier le plus fort du monde ?",
+    "choices": ["Satoru Gojo", "Yuji Itadori", "Sukuna", "Kento Nanami"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du père de Gon qui est un Hunter légendaire ?",
+    "choices": ["Ging Freecss", "Kite", "Netero", "Hisoka"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du capitaine de la 10ème division ?",
+    "choices": ["Toshiro Hitsugaya", "Byakuya Kuchiki", "Kenpachi Zaraki", "Shunsui Kyoraku"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'amie de Kirito qu'il sauve dans SAO ?",
+    "choices": ["Asuna Yuuki", "Sinon", "Leafa", "Yui"],
+    "answer_index": 0,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'ami humain de Kaneki qui travaille au CCG ?",
+    "choices": ["Hideyoshi Nagachika", "Nishiki Nishio", "Tsukiyama", "Ayato Kirishima"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du héros de classe C qui utilise un vélo ?",
+    "choices": ["Mumen Rider", "Saitama", "Genos", "Licenseless Rider"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_007",
+    "difficulty": "easy",
+    "question": "Quel est le nom du chasseur de primes qui est un ancien policier ?",
+    "choices": ["Jet Black", "Spike Spiegel", "Faye Valentine", "Vicious"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du clan qui possède le Kekkei Genkai du Byakugan ?",
+    "choices": ["Hyuga", "Uchiha", "Senju", "Uzumaki"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du navigateur de l'équipage des Pirates au Chapeau de Paille ?",
+    "choices": ["Nami", "Robin", "Franky", "Brook"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_011",
+    "difficulty": "normal",
+    "question": "Qui est le dieu de la création de l'univers 7 ?",
+    "choices": ["Shin", "Kibito", "Zeno", "Dende"],
+    "answer_index": 2,
+    "tags": ["dbz", "dragonball super"]
+  },
+  {
+    "id": "aot_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du titan qui peut cracher de la vapeur brûlante ?",
+    "choices": ["Titan Colossal", "Titan Cuirassé", "Titan Assaillant", "Titan Bestial"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du Alter de Katsuki Bakugo ?",
+    "choices": ["Explosion", "Hellflame", "One For All", "Half-Cold Half-Hot"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du détective qui remplace L après sa mort ?",
+    "choices": ["Near", "Mello", "Matt", "Beyond Birthday"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'homuncule qui représente la luxure ?",
+    "choices": ["Lust", "Gluttony", "Envy", "Pride"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du souffle utilisé par Inosuke Hashibira ?",
+    "choices": ["Souffle de la Bête", "Souffle de l'Eau", "Souffle de la Foudre", "Souffle du Vent"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du domaine de Mahito ?",
+    "choices": ["Sanctuaire de l'Âme", "Sanctuaire de la Haine", "Sanctuaire de la Douleur", "Sanctuaire de la Mort"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_008",
+    "difficulty": "normal",
+    "question": "Quelle est la capacité Nen de Kurapika ?",
+    "choices": ["Spécialisation (Chaînes)", "Renforcement", "Transmutation", "Manipulation"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du bankai de Byakuya Kuchiki ?",
+    "choices": ["Senbonzakura Kageyoshi", "Daiguren Hyōrinmaru", "Tensa Zangetsu", "Kannonbiraki Benihime Aratame"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du système de navigation dans ALO ?",
+    "choices": ["Cardinal System", "Yggdrasil", "World Tree", "ALfheim"],
+    "answer_index": 1,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'organisation qui cherche à créer des goules artificielles ?",
+    "choices": ["V", "Aogiri Tree", "CCG", "Anteiku"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom du héros de classe S n°2 ?",
+    "choices": ["Tatsumaki", "Silver Fang", "Atomic Samurai", "Child Emperor"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_008",
+    "difficulty": "normal",
+    "question": "Quel est le nom de la chasseuse de primes qui est une tricheuse ?",
+    "choices": ["Faye Valentine", "Julia", "Electra", "Annie"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du technique utilisé par Itachi Uchiha pour sceller Amaterasu ?",
+    "choices": ["Izanagi", "Izanami", "Tsukuyomi", "Kotoamatsukami"],
+    "answer_index": 2,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du fruit du démon qui permet de manipuler l'ombre ?",
+    "choices": ["Kage Kage no Mi", "Mera Mera no Mi", "Gomu Gomu no Mi", "Hito Hito no Mi"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'attaque que Vegeta utilise pour se sacrifier contre Majin Buu ?",
+    "choices": ["Final Explosion", "Big Bang Attack", "Galick Gun", "Final Flash"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball"]
+  },
+  {
+    "id": "aot_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du titan qui peut se transformer en un être humain de petite taille ?",
+    "choices": ["Titan Bestial", "Titan Colossal", "Titan Marteau", "Titan Originel"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du Alter de All For One ?",
+    "choices": ["All For One", "One For All", "Fa Jin", "Gearshift"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du shinigami qui prend le Death Note de Rem après sa mort ?",
+    "choices": ["Sidoh", "Ryuk", "Gelus", "Arma"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la porte de la vérité que Edward et Alphonse voient ?",
+    "choices": ["La Porte de la Vérité", "La Porte de l'Alchimie", "La Porte de la Connaissance", "La Porte de la Transcendance"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du premier souffle de la foudre utilisé par Zenitsu ?",
+    "choices": ["Thunderclap and Flash", "Sixfold", "Eightfold", "God Speed"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la technique de Sukuna qui coupe tout ?",
+    "choices": ["Dismantle", "Cleave", "Malevolent Shrine", "Domain Expansion"],
+    "answer_index": 1,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_009",
+    "difficulty": "hard",
+    "question": "Quelle est la condition pour que Killua puisse utiliser son pouvoir 'Godspeed' ?",
+    "choices": ["Avoir suffisamment d'électricité", "Être en colère", "Avoir un contrat avec Nen", "Utiliser un objet spécial"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du bankai de Ichigo Kurosaki après son entraînement avec le Roi des Quincy ?",
+    "choices": ["Tensa Zangetsu", "Zangetsu", "Final Getsuga Tensho", "Mugetsu"],
+    "answer_index": 3,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du système qui permet de transférer la conscience dans le monde virtuel ?",
+    "choices": ["STL", "Medicuboid", "Soul Translator", "FullDive"],
+    "answer_index": 0,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom du kagune de type 'bikaku' que possède Nishiki ?",
+    "choices": ["Kagune de type 'Queue'", "Kagune de type 'Épée'", "Kagune de type 'Ailes'", "Kagune de type 'Tentacule'"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'organisation de monstres dans 'One Punch Man' ?",
+    "choices": ["Monster Association", "House of Evolution", "The Organization", "Mad Cyborgs"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_009",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la planète où se déroule la majorité de l'action dans 'Cowboy Bebop' ?",
+    "choices": ["Mars", "Terre", "Venus", "Jupiter"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_013",
+    "difficulty": "easy",
+    "question": "Quel est le nom du village caché du Sable ?",
+    "choices": ["Sunagakure", "Konohagakure", "Kirigakure", "Kumogakure"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_013",
+    "difficulty": "easy",
+    "question": "Quel est le nom du roi des pirates ?",
+    "choices": ["Gol D. Roger", "Edward Newgate", "Monkey D. Luffy", "Shanks"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_013",
+    "difficulty": "easy",
+    "question": "Qui est le dieu de la destruction de l'univers 6 ?",
+    "choices": ["Champa", "Beerus", "Whis", "Vados"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball super"]
+  },
+  {
+    "id": "aot_013",
+    "difficulty": "easy",
+    "question": "Quel est le nom du bataillon chargé de la protection intérieure ?",
+    "choices": ["Police militaire", "Bataillon d'exploration", "Garnison", "Brigade spéciale"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'école rivale de U.A. ?",
+    "choices": ["Shiketsu High", "Ketsubutsu Academy", "Isamu High", "Seijin High"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du père de Light Yagami ?",
+    "choices": ["Soichiro Yagami", "Quillsh Wammy", "Watari", "L Lawliet"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom de la frère d'Edward Elric ?",
+    "choices": ["Alphonse Elric", "Winry Rockbell", "Roy Mustang", "Riza Hawkeye"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du chef des Pourfendeurs de Démons ?",
+    "choices": ["Kagaya Ubuyashiki", "Tengen Uzui", "Kyojuro Rengoku", "Giyu Tomioka"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'école de sorcellerie de Kyoto ?",
+    "choices": ["École de Sorcellerie de Kyoto", "École de Tokyo", "Académie Jujutsu", "Lycée des Malédictions"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'examinateur de l'examen de Hunter ?",
+    "choices": ["Isaac Netero", "Ging Freecss", "Hisoka", "Illumi Zoldyck"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du capitaine de la 6ème division ?",
+    "choices": ["Byakuya Kuchiki", "Toshiro Hitsugaya", "Kenpachi Zaraki", "Shunsui Kyoraku"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du créateur de Sword Art Online ?",
+    "choices": ["Akihiko Kayaba", "Kazuto Kirigaya", "Heathcliff", "Cardinal"],
+    "answer_index": 0,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'ami goule de Kaneki qui travaille à Anteiku ?",
+    "choices": ["Touka Kirishima", "Nishiki Nishio", "Tsukiyama", "Ayato Kirishima"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du héros de classe S n°3 ?",
+    "choices": ["Silver Fang", "Tatsumaki", "Atomic Samurai", "Child Emperor"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_010",
+    "difficulty": "easy",
+    "question": "Quel est le nom du vaisseau de Spike Spiegel ?",
+    "choices": ["Swordfish II", "Bebop", "Red Tail", "Hammerhead"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_014",
+    "difficulty": "normal",
+    "question": "Quel est le nom du clan qui possède le Kekkei Genkai du Rinnegan ?",
+    "choices": ["Uchiha", "Hyuga", "Senju", "Otsutsuki"],
+    "answer_index": 3,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_014",
+    "difficulty": "normal",
+    "question": "Quel est le nom du fruit du démon qui permet de contrôler la gravité ?",
+    "choices": ["Zushi Zushi no Mi", "Gura Gura no Mi", "Mera Mera no Mi", "Hito Hito no Mi"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_014",
+    "difficulty": "normal",
+    "question": "Qui est le dieu de la destruction de l'univers 11 ?",
+    "choices": ["Belmod", "Beerus", "Champa", "Quitela"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball super"]
+  },
+  {
+    "id": "aot_014",
+    "difficulty": "normal",
+    "question": "Quel est le nom du titan qui peut durcir ses poings ?",
+    "choices": ["Titan Marteau", "Titan Cuirassé", "Titan Bestial", "Titan Colossal"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du Alter de Ochaco Uraraka ?",
+    "choices": ["Zero Gravity", "Gravity Manipulation", "Float", "Weightless"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du détective qui travaille avec L ?",
+    "choices": ["Watari", "Soichiro Yagami", "Naomi Misora", "Kiyomi Takada"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'homuncule qui représente la gourmandise ?",
+    "choices": ["Gluttony", "Lust", "Envy", "Pride"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du souffle utilisé par Kyojuro Rengoku ?",
+    "choices": ["Souffle de la Flamme", "Souffle de l'Eau", "Souffle de la Foudre", "Souffle du Vent"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du domaine de Jogo ?",
+    "choices": ["Sanctuaire de la Flamme", "Sanctuaire de la Lave", "Sanctuaire du Volcan", "Sanctuaire de la Chaleur"],
+    "answer_index": 1,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_011",
+    "difficulty": "normal",
+    "question": "Quelle est la capacité Nen de Hisoka ?",
+    "choices": ["Transmutation (Bungee Gum)", "Renforcement", "Émission", "Manipulation"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du bankai de Shunsui Kyoraku ?",
+    "choices": ["Katen Kyokotsu: Karamatsu Shinju", "Daiguren Hyōrinmaru", "Tensa Zangetsu", "Senbonzakura Kageyoshi"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du système de combat dans Gun Gale Online ?",
+    "choices": ["Bullet Circle", "Sword Skills", "Magic System", "Skill Connect"],
+    "answer_index": 0,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom de l'organisation qui traque les goules à Tokyo ?",
+    "choices": ["CCG", "Aogiri Tree", "Anteiku", "V"],
+    "answer_index": 0,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom du héros de classe S n°4 ?",
+    "choices": ["Atomic Samurai", "Silver Fang", "Tatsumaki", "Child Emperor"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_011",
+    "difficulty": "normal",
+    "question": "Quel est le nom de la planète où vit la soeur de Spike ?",
+    "choices": ["Titan", "Mars", "Terre", "Venus"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
+  },
+  {
+    "id": "naruto_015",
+    "difficulty": "hard",
+    "question": "Quel est le nom du technique utilisé par Madara Uchiha pour invoquer un météore ?",
+    "choices": ["Tengai Shinsei", "Susano'o", "Amaterasu", "Tsukuyomi"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_015",
+    "difficulty": "hard",
+    "question": "Quel est le nom du fruit du démon qui permet de se transformer en phénix ?",
+    "choices": ["Tori Tori no Mi, Model: Phoenix", "Hito Hito no Mi, Model: Daibutsu", "Uo Uo no Mi, Model: Seiryu", "Mogu Mogu no Mi"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  },
+  {
+    "id": "dbz_015",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'attaque que Goku utilise pour vaincer Jiren ?",
+    "choices": ["Ultra Instinct Sign", "Kamehameha", "Dragon Fist", "Spirit Bomb"],
+    "answer_index": 0,
+    "tags": ["dbz", "dragonball super"]
+  },
+  {
+    "id": "aot_015",
+    "difficulty": "hard",
+    "question": "Quel est le nom du titan qui peut se transformer en un être humain de grande taille ?",
+    "choices": ["Titan Colossal", "Titan Bestial", "Titan Marteau", "Titan Originel"],
+    "answer_index": 0,
+    "tags": ["aot", "snk"]
+  },
+  {
+    "id": "mha_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du Alter de Tomura Shigaraki ?",
+    "choices": ["Decay", "All For One", "One For All", "Fa Jin"],
+    "answer_index": 0,
+    "tags": ["my hero academia", "mha"]
+  },
+  {
+    "id": "deathnote_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du shinigami qui donne le Death Note à Light ?",
+    "choices": ["Ryuk", "Rem", "Sidoh", "Gelus"],
+    "answer_index": 0,
+    "tags": ["death note"]
+  },
+  {
+    "id": "fmab_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la porte de la vérité que Edward et Alphonse ouvrent ?",
+    "choices": ["La Porte de la Vérité", "La Porte de l'Alchimie", "La Porte de la Connaissance", "La Porte de la Transcendance"],
+    "answer_index": 0,
+    "tags": ["fullmetal alchemist", "fmab"]
+  },
+  {
+    "id": "demonslayer_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du premier souffle du vent utilisé par Sanemi Shinazugawa ?",
+    "choices": ["Wind Breathing, First Form: Dust Whirlwind Cutter", "Wind Breathing, Second Form", "Wind Breathing, Third Form", "Wind Breathing, Fourth Form"],
+    "answer_index": 0,
+    "tags": ["demon slayer", "kimetsu no yaiba"]
+  },
+  {
+    "id": "jjk_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la technique de Gojo qui repousse tout ?",
+    "choices": ["Red", "Blue", "Hollow Purple", "Infinity"],
+    "answer_index": 0,
+    "tags": ["jujutsu kaisen", "jjk"]
+  },
+  {
+    "id": "hunterxhunter_012",
+    "difficulty": "hard",
+    "question": "Quelle est la condition pour que Gon utilise sa forme adulte ?",
+    "choices": ["Sacrifier tout son potentiel et sa vie future", "Être en colère", "Avoir un contrat avec Nen", "Utiliser un objet spécial"],
+    "answer_index": 0,
+    "tags": ["hunter x hunter"]
+  },
+  {
+    "id": "bleach_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du bankai de Yoruichi Shihoin ?",
+    "choices": ["Shunko", "Tensa Zangetsu", "Senbonzakura Kageyoshi", "Daiguren Hyōrinmaru"],
+    "answer_index": 0,
+    "tags": ["bleach"]
+  },
+  {
+    "id": "sao_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du système qui régit le monde virtuel dans 'Alicization' ?",
+    "choices": ["Cardinal", "STL", "RATH", "Underworld"],
+    "answer_index": 0,
+    "tags": ["sword art online", "sao"]
+  },
+  {
+    "id": "tokyoghoul_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom du kagune de type 'rinkaku' que possède Kaneki ?",
+    "choices": ["Kagune de type 'Dragon'", "Kagune de type 'Ōwl'", "Kagune de type 'Centipede'", "Kagune de type 'Tentacle'"],
+    "answer_index": 1,
+    "tags": ["tokyo ghoul"]
+  },
+  {
+    "id": "onepunchman_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom de l'organisation de héros dans 'One Punch Man' ?",
+    "choices": ["Hero Association", "Justice League", "S-Class Heroes", "The Association"],
+    "answer_index": 0,
+    "tags": ["one punch man"]
+  },
+  {
+    "id": "cowboybebop_012",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la maladie dont souffre Spike Spiegel ?",
+    "choices": ["Syndrome de la vision tunnel", "Amnésie", "Mal de l'espace", "Il n'a pas de maladie"],
+    "answer_index": 0,
+    "tags": ["cowboy bebop"]
   }
 ]

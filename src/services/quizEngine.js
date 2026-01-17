@@ -12,12 +12,12 @@ export const quizEngine = {
   get(groupJid) {
     return ACTIVE_QUIZZES.get(groupJid)
   },
-  async start({ sock, groupJid, startedBy, difficulty = 'normal' }) {
+  async start({ sock, groupJid, startedBy, difficulty = 'normal', total = 1, marathon = false }) {
     if (this.isQuizActive(groupJid)) {
       await sock.sendMessage(groupJid, { text: "⚠️ Un quiz est déjà en cours." })
       return
     }
-    await logQuizEvent({ groupJid, quizId: null, event: 'start', data: { startedBy, difficulty } })
+    await logQuizEvent({ groupJid, quizId: null, event: 'start', data: { startedBy, difficulty, total, marathon } })
     const { data: questions, error } = await supabase
       .from('quiz_questions')
       .select('*')
@@ -27,26 +27,46 @@ export const quizEngine = {
       await sock.sendMessage(groupJid, { text: `⚠️ Aucune question trouvée pour difficulté: ${difficulty}` })
       return
     }
-    const q = questions[Math.floor(Math.random() * questions.length)]
-    const quiz = {
+    // Shuffle questions
+    const shuffled = questions.sort(() => Math.random() - 0.5)
+    const quizSession = {
       state: 'active',
       groupJid,
       startedBy,
       difficulty,
-      questionId: q.id,
-      question: q.question,
-      choices: q.choices,
-      answerIndex: q.answer_index,
-      startTime: Date.now(),
-      durationMs: 90000,
+      questions: shuffled,
+      current: 0,
+      total: marathon ? Infinity : Math.max(1, total),
+      marathon,
+      timer: null,
       answers: {},
-      firstCorrectWinnerJid: null,
-      timer: null
+      firstCorrectWinnerJid: null
     }
-    ACTIVE_QUIZZES.set(groupJid, quiz)
+    ACTIVE_QUIZZES.set(groupJid, quizSession)
+    await this.nextQuestion({ sock, groupJid })
+  },
+
+  async nextQuestion({ sock, groupJid }) {
+    const quiz = this.get(groupJid)
+    if (!quiz) return
+    if (quiz.current >= quiz.total || quiz.current >= quiz.questions.length) {
+      await sock.sendMessage(groupJid, { text: `🎉 Quiz terminé ! (${quiz.current} questions posées)` })
+      ACTIVE_QUIZZES.delete(groupJid)
+      return
+    }
+    const q = quiz.questions[quiz.current]
+    quiz.state = 'active'
+    quiz.questionId = q.id
+    quiz.question = q.question
+    quiz.choices = q.choices
+    quiz.answerIndex = q.answer_index
+    quiz.startTime = Date.now()
+    quiz.durationMs = 90000
+    quiz.answers = {}
+    quiz.firstCorrectWinnerJid = null
     await logQuizEvent({ groupJid, quizId: q.id, event: 'question', data: { question: q.question, choices: q.choices } })
     const text =
-`🎯 *QUIZ (${difficulty.toUpperCase()})*
+`🎯 *QUIZ (${quiz.difficulty.toUpperCase()})*  [${quiz.current + 1}/${quiz.total === Infinity ? '?' : quiz.total}]
 ${q.question}
 
 A) ${q.choices[0]}
@@ -58,7 +78,7 @@ D) ${q.choices[3]}
     await sock.sendMessage(groupJid, { text })
     quiz.timer = setTimeout(async () => {
       try {
-        await this.reveal({ sock, groupJid })
+        await this.reveal({ sock, groupJid, autoNext: true })
       } catch (e) {}
     }, quiz.durationMs)
   },
@@ -75,7 +95,7 @@ D) ${q.choices[3]}
       await sock.sendMessage(groupJid, { text: `⚡ 1er correct : @${senderJid.split('@')[0]} (+bonus vitesse)`, mentions: [senderJid] })
     }
   },
-  async reveal({ sock, groupJid }) {
+  async reveal({ sock, groupJid, autoNext = false }) {
     const quiz = this.get(groupJid)
     if (!quiz) return
     if (quiz.timer) clearTimeout(quiz.timer)
@@ -125,8 +145,13 @@ Participants : ${Object.keys(quiz.answers).length}`
       const lines = results.slice(0, 10).map(r => `+${r.delta} XP → ${r.rank} @${r.jid.split('@')[0]}`)
       await sock.sendMessage(groupJid, { text: "📈 Gains XP:\n" + lines.join('\n'), mentions: results.map(r => r.jid) })
     }
-    quiz.state = 'closed'
-    ACTIVE_QUIZZES.delete(groupJid)
+    quiz.current = (quiz.current || 0) + 1
+    if (autoNext && quiz.current < quiz.total && quiz.current < quiz.questions.length) {
+      setTimeout(() => this.nextQuestion({ sock, groupJid }), 3500)
+    } else {
+      quiz.state = 'closed'
+      ACTIVE_QUIZZES.delete(groupJid)
+    }
   },
   async stop({ sock, groupJid }) {
     const quiz = this.get(groupJid)

@@ -3,15 +3,15 @@ import { ENDPOINTS } from '../config/endpoints.js'
 export async function cmdImg(sock, msg) {
   const groupJid = msg.key.remoteJid
   // Feedback immédiat
-  await sock.sendMessage(groupJid, { text: '🔎 Recherche d’une image anime en cours... ⏳' })
+  await sock.sendMessage(groupJid, { text: '🔎 Recherche d’une image anime en cours... ⏳', quoted: msg })
   try {
     const res = await fetch(`${ENDPOINTS.WAIFU}/sfw/waifu`)
     const data = await res.json()
     if (!data.url) {
-      return sock.sendMessage(groupJid, { text: 'Aucune image trouvée.' })
+      return sock.sendMessage(groupJid, { text: 'Aucune image trouvée.', quoted: msg })
     }
-    await sock.sendMessage(groupJid, { image: { url: data.url }, caption: '╭━━━[ ✨ *IMAGE ANIME* ]━━━╮\n┃ Waifu générée aléatoirement !\n╰━━━━━━━━━━━━━━━━━━━━╯' })
+    await sock.sendMessage(groupJid, { image: { url: data.url }, caption: '╭━━━[ ✨ *IMAGE ANIME* ]━━━╮\n┃ Waifu générée aléatoirement !\n╰━━━━━━━━━━━━━━━━━━━━╯', quoted: msg })
   } catch (e) {
-    await sock.sendMessage(groupJid, { text: '❌ Erreur lors de la récupération image.' })
+    await sock.sendMessage(groupJid, { text: '❌ Erreur lors de la récupération image.', quoted: msg })
   }
 }

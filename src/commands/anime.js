@@ -1,4 +1,5 @@
 import { ENDPOINTS } from '../config/endpoints.js'
+import { translateToFr } from '../utils/translate.js'
 
 export async function cmdAnime(sock, msg, args) {
   const groupJid = msg.key.remoteJid
@@ -18,18 +19,32 @@ export async function cmdAnime(sock, msg, args) {
     const detailsRes = await fetch(`${ENDPOINTS.JIKAN}/anime/${anime.mal_id}/full`)
     const details = await detailsRes.json()
     const a = details.data
+
+    // Traduction automatique via utilitaire
+    let titreFr = a.title, synopsisFr = a.synopsis, langue = 'EN';
+    try {
+      titreFr = await translateToFr(a.title)
+      langue = 'FR'
+    } catch {}
+    try {
+      if (a.synopsis) synopsisFr = await translateToFr(a.synopsis.slice(0, 500))
+    } catch {}
+
     const text =
   `╭━━━[ 🎬 *ANIME* ]━━━╮
-  ┃ Titre : *${a.title}*
+  ┃ Titre : *${titreFr}*
   ┃ Épisodes : ${a.episodes ?? '?'}
   ┃ ⭐ Score : ${a.score ?? '?'}
   ┃ 🎭 Genres : ${(a.genres || []).map(g => g.name).join(', ')}
   ┃
-  ┃ ${a.synopsis?.slice(0, 400) ?? ''}
+  ┃ ${synopsisFr?.slice(0, 400) ?? ''}
+  ┃
+  ┃ 🌐 Langue : ${langue}
   ╰━━━━━━━━━━━━━━━━━━━━╯`
     await sock.sendMessage(groupJid, {
       text,
-      ...(a.images?.jpg?.image_url ? { image: { url: a.images.jpg.image_url } } : {})
+      ...(a.images?.jpg?.image_url ? { image: { url: a.images.jpg.image_url } } : {}),
+      quoted: msg
     })
   } catch (e) {
     await sock.sendMessage(groupJid, { text: '❌ Erreur lors de la recherche anime.' })
