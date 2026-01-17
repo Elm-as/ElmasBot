@@ -1,0 +1,18 @@
+[
+  {
+    "id": "naruto_001",
+    "difficulty": "easy",
+    "question": "Quel est le prénom du rival principal de Naruto ?",
+    "choices": ["Sasuke", "Kakashi", "Gaara", "Shikamaru"],
+    "answer_index": 0,
+    "tags": ["naruto"]
+  },
+  {
+    "id": "onepiece_001",
+    "difficulty": "easy",
+    "question": "Quel est le nom du chapeau de Luffy ?",
+    "choices": ["Chapeau de paille", "Chapeau noir", "Casquette rouge", "Béret vert"],
+    "answer_index": 0,
+    "tags": ["onepiece"]
+  }
+]
