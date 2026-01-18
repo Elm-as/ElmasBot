@@ -77,11 +77,12 @@ export const quizEngine = {
     quiz.state = 'active'
     quiz.questionId = q.id
     quiz.question = q.question
-    // Mélange les choix et ajuste l'index de la bonne réponse
+    // Mélange les choix et ajuste l'index de la bonne réponse (sans changer le contenu de la bonne réponse)
     const origChoices = [...q.choices]
     const origAnswerIdx = q.answer_index
     const shuffled = origChoices.map((c, i) => ({ c, i })).sort(() => Math.random() - 0.5)
     quiz.choices = shuffled.map(x => x.c)
+    // La nouvelle position de la bonne réponse (celle qui était à answer_index)
     quiz.answerIndex = shuffled.findIndex(x => x.i === origAnswerIdx)
     quiz.startTime = Date.now()
     quiz.durationMs = 10000
