@@ -40,9 +40,19 @@ export async function cmdPerso(sock, msg, args) {
   ┃
   ┃ 🌐 Langue : ${langue}
   ╰━━━━━━━━━━━━━━━━━━━━╯`
+    // Fallback image si pas d'image Jikan
+    let imageUrl = p.images?.jpg?.image_url
+    if (!imageUrl) {
+      try {
+        const waifuRes = await fetch(`https://api.waifu.im/search/?included_tags=${encodeURIComponent(query)}&is_nsfw=false&many=false`)
+        const waifuData = await waifuRes.json()
+        if (waifuData.images?.length) imageUrl = waifuData.images[0].url
+      } catch {}
+    }
+    if (!imageUrl) imageUrl = 'https://i.imgur.com/8Q2Qy4F.png'
     await sock.sendMessage(groupJid, {
       text,
-      image: { url: p.images?.jpg?.image_url || 'https://i.imgur.com/8Q2Qy4F.png' },
+      image: { url: imageUrl },
       quoted: msg
     })
   } catch (e) {

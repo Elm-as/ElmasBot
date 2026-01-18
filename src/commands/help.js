@@ -10,20 +10,20 @@ export async function cmdHelp(sock, msg) {
 ┃   !classement — Classement XP du groupe
 ┃   !daily — Bonus XP quotidien
 ┃   !anime <nom> — Recherche d’anime (FR)
-┃   !perso <nom> — Recherche de personnage (FR)
+┃   !perso <nom> — Fiche personnage manga/anime (FR)
 ┃   !img — Image waifu aléatoire
-┃   !image <mot-clé> — Image d’anime/manga/personnage
-┃   !trace — Recherche d’anime par image
+┃   !image <mot-clé> — Image d’anime/manga/personnage précis (FR)
+┃   !trace — Recherche d’anime par image (trace.moe)
 ┃   !xpLogs — Voir ses logs XP
 ┃
 ┃ 🎯 Quiz :
 ┃   !quiz start <niveau> [nb|marathon] — Quiz automatique (ex: !quiz start normal 5)
 ┃   !quiz stop — Arrêter le quiz
-┃   !quiz rep — Réponse à la question en cours
+┃   !quiz rep — Répondre à la question en cours
 ┃   !quiz score [@user] — Score quiz (groupe ou individuel)
 ┃   !quiz info — Explication du quiz
 ┃   !quiz admins — Liste des admins quiz
-┃   !quiz addAdmin <@user|jid> — Ajouter un admin quiz
+┃   !quiz setAdmin <@user|jid> — Ajouter un admin quiz
 ┃   !quiz delAdmin <@user|jid> — Retirer un admin quiz
 ┃   !quiz settings <clé> <valeur> — Paramètres quiz
 ┃

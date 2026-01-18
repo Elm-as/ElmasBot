@@ -1,6 +1,8 @@
 import { supabase } from '../db/supabase.js'
 import { addXp, incWinLose } from './xp.js'
 import { logQuizEvent } from './quizLogs.js'
+import fs from 'fs'
+import path from 'path'
 
 const ACTIVE_QUIZZES = new Map()
 const DIFF_REWARDS = { easy: 50, normal: 150, hard: 400 }
@@ -18,14 +20,31 @@ export const quizEngine = {
       return
     }
     await logQuizEvent({ groupJid, quizId: null, event: 'start', data: { startedBy, difficulty, total, marathon } })
-    const { data: questions, error } = await supabase
-      .from('quiz_questions')
-      .select('*')
-      .eq('difficulty', difficulty)
-    if (error) throw error
+    let questions = []
+    let error = null
+    try {
+      const res = await supabase
+        .from('quiz_questions')
+        .select('*')
+        .eq('difficulty', difficulty)
+      questions = res.data
+      error = res.error
+    } catch (e) { error = e }
+    // Fallback local si aucune question en base
     if (!questions || questions.length === 0) {
-      await sock.sendMessage(groupJid, { text: `⚠️ Aucune question trouvée pour difficulté: ${difficulty}` })
-      return
+      try {
+        const filePath = path.resolve(path.dirname(import.meta.url.replace('file://','')), '../data/quiz_questions_seed.json')
+        const raw = fs.readFileSync(filePath, 'utf-8')
+        const all = JSON.parse(raw)
+        questions = all.filter(q => q.difficulty === difficulty)
+      } catch (e) {
+        await sock.sendMessage(groupJid, { text: `⚠️ Aucune question trouvée (base et local).` })
+        return
+      }
+      if (!questions.length) {
+        await sock.sendMessage(groupJid, { text: `⚠️ Aucune question trouvée pour difficulté: ${difficulty}` })
+        return
+      }
     }
     // Shuffle questions
     const shuffled = questions.sort(() => Math.random() - 0.5)
