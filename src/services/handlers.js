@@ -35,6 +35,7 @@ function getText(msg) {
   ).trim()
 }
 
+
 export async function handleMessage(sock, msg) {
   const text = getText(msg)
   const jid = msg.key.remoteJid
@@ -44,6 +45,19 @@ export async function handleMessage(sock, msg) {
   await ensureUser(sender)
   await ensureGroup(jid)
   await ensureGroupMember(jid, sender)
+
+  // 0) Bienvenue nouveaux membres (hook)
+  if (msg.messageStubType === 27 && msg.messageStubParameters?.length) { // 27 = "add participant"
+    const newJids = msg.messageStubParameters
+    for (const njid of newJids) {
+      await sock.sendMessage(jid, {
+        text: `👋 Bienvenue @${njid.split('@')[0]} !\nMerci de rejoindre ce groupe.\n\nRègles principales :\n- Respect\n- Pas de spam\n- Pas de contenu NSFW\n- Utilise !help pour voir les commandes du bot.\n\nAmuse-toi bien !`,
+        mentions: [njid],
+        quoted: msg
+      })
+    }
+    return
+  }
 
   // 1) Réponses quiz (A/B/C/D) doivent passer AVANT prefix
   if (quizEngine.isQuizActive(jid)) {
@@ -61,10 +75,10 @@ export async function handleMessage(sock, msg) {
   const [raw, ...args] = text.slice(prefix.length).trim().split(/\s+/)
   const command = raw.toLowerCase()
 
+  // Toutes les commandes reply au message d'origine
   switch (command) {
     case 'image':
-      await cmdImage(sock, msg, args)
-      break;
+      return cmdImage(sock, msg, args)
     case 'ping': return cmdPing(sock, msg)
     case 'help':
     case 'aide':
@@ -90,19 +104,20 @@ export async function handleMessage(sock, msg) {
       if (sub === 'settings') return cmdQuizSettings(sock, msg, args.slice(1))
       if (sub === 'info') return cmdQuizInfo(sock, msg)
       if (sub === 'score') return cmdQuizScore(sock, msg, args.slice(1))
-      return sock.sendMessage(jid, { text: "Utilise: !quiz start easy|normal|hard / !quiz stop / !quiz rep / !quiz admins / !quiz setadmin @user / !quiz deladmin @user / !quiz settings [clé] [valeur]" })
+      return sock.sendMessage(jid, { text: "Utilise: !quiz start easy|normal|hard / !quiz stop / !quiz rep / !quiz admins / !quiz setadmin @user / !quiz deladmin @user / !quiz settings [clé] [valeur]", quoted: msg })
     }
-      case 'easteregg':
-        const easterEggs = [
-          `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Tu as trouvé le secret du bot !\n┃ \n┃ 🚀 "Plus ultra !"\n┃ \n┃ 👾 Révèle ce code à tes amis otakus !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
-          `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Tu as percé le mystère...\n┃ \n┃ 🍜 "Itadakimasu !"\n┃ \n┃ 🐉 Le pouvoir du manga est en toi !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
-          `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Secret du bot activé !\n┃ \n┃ ⚡ "Dattebayo !"\n┃ \n┃ 🎴 Tu es digne d’un héros shônen !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
-          `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Tu as trouvé l’œuf caché !\n┃ \n┃ 🏮 "Omae wa mou shindeiru..."\n┃ \n┃ 👺 Partage ce secret avec ton clan !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
-          `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Félicitations, explorateur !\n┃ \n┃ 🦊 "Believe in yourself !"\n┃ \n┃ 🌸 Que la passion anime t’accompagne !\n╰━━━━━━━━━━━━━━━━━━━━╯`
-        ]
-        const randomMsg = easterEggs[Math.floor(Math.random() * easterEggs.length)]
-        await sock.sendMessage(jid, { text: randomMsg })
-        break;
+    case 'easteregg': {
+      const easterEggs = [
+        `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Tu as trouvé le secret du bot !\n┃ \n┃ 🚀 "Plus ultra !"\n┃ \n┃ 👾 Révèle ce code à tes amis otakus !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
+        `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Tu as percé le mystère...\n┃ \n┃ 🍜 "Itadakimasu !"\n┃ \n┃ 🐉 Le pouvoir du manga est en toi !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
+        `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Secret du bot activé !\n┃ \n┃ ⚡ "Dattebayo !"\n┃ \n┃ 🎴 Tu es digne d’un héros shônen !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
+        `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Tu as trouvé l’œuf caché !\n┃ \n┃ 🏮 "Omae wa mou shindeiru..."\n┃ \n┃ 👺 Partage ce secret avec ton clan !\n╰━━━━━━━━━━━━━━━━━━━━╯`,
+        `╭━━━[ 🥚 *EASTER EGG* ]━━━╮\n┃ Félicitations, explorateur !\n┃ \n┃ 🦊 "Believe in yourself !"\n┃ \n┃ 🌸 Que la passion anime t’accompagne !\n╰━━━━━━━━━━━━━━━━━━━━╯`
+      ]
+      const randomMsg = easterEggs[Math.floor(Math.random() * easterEggs.length)]
+      await sock.sendMessage(jid, { text: randomMsg, quoted: msg })
+      break;
+    }
     default:
       return
   }
