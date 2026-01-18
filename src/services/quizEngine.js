@@ -80,7 +80,7 @@ export const quizEngine = {
     quiz.choices = q.choices
     quiz.answerIndex = q.answer_index
     quiz.startTime = Date.now()
-    quiz.durationMs = 90000
+    quiz.durationMs = 10000
     quiz.answers = {}
     quiz.firstCorrectWinnerJid = null
     await logQuizEvent({ groupJid, quizId: q.id, event: 'question', data: { question: q.question, choices: q.choices } })
@@ -95,11 +95,23 @@ D) ${q.choices[3]}
 
 ⏳ Répondez par: A / B / C / D`
     await sock.sendMessage(groupJid, { text })
+    // Timer principal (10s)
+    let timeLeft = quiz.durationMs / 1000
     quiz.timer = setTimeout(async () => {
       try {
         await this.reveal({ sock, groupJid, autoNext: true })
       } catch (e) {}
     }, quiz.durationMs)
+    // Timer d'annonce toutes les 2s
+    quiz.timeAnnounce = setInterval(() => {
+      timeLeft -= 2
+      if (timeLeft > 0) {
+        sock.sendMessage(groupJid, { text: `⏳ Il reste ${timeLeft}s pour répondre !` })
+      }
+      if (timeLeft <= 0) {
+        clearInterval(quiz.timeAnnounce)
+      }
+    }, 2000)
   },
   async submitAnswer({ sock, groupJid, senderJid, letter }) {
     const quiz = this.get(groupJid)
@@ -118,6 +130,7 @@ D) ${q.choices[3]}
     const quiz = this.get(groupJid)
     if (!quiz) return
     if (quiz.timer) clearTimeout(quiz.timer)
+    if (quiz.timeAnnounce) clearInterval(quiz.timeAnnounce)
     quiz.state = 'revealed'
     const correctLetter = ['A', 'B', 'C', 'D'][quiz.answerIndex]
     const winners = []
